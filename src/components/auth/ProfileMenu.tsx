@@ -8,8 +8,8 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
-import UserAvatar from "../common/UserAvatar";
 import dynamic from "next/dynamic";
+import UserAvatar from "../common/UserAvatar";
 const LogoutModal = dynamic(() => import("../auth/LogoutModal"));
 
 export default function ProfileMenu({
