@@ -1,13 +1,12 @@
-import React, { Fragment, useEffect, useMemo, useRef, useState } from "react";
+import React, { useEffect, useMemo, useRef, useState } from "react";
 import { getSocket } from "@/lib/socket.config";
-import { Input } from "../ui/input";
 import { v4 as uuidv4 } from "uuid";
 export default function Chats({
   group,
   oldMessages,
   chatUser,
 }: {
-  group: GroupChatType;
+  group: ChatGroupType;
   oldMessages: Array<MessageType> | [];
   chatUser?: GroupChatUserType;
 }) {
